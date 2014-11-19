@@ -190,6 +190,7 @@
            <code>$ git status</code><br>
            <span class="note">file status "Untracked files present"</span><br>
            <code>$ git add newfile.txt</code><br>
+           <span class="note">Adds files to stating area</span><br>
            <code>$ git status</code><br>
            <span class="note">file status "Changes to be committed"</span>
         </q>
@@ -210,6 +211,60 @@
         </q>
     </div>
 
+    <div id="commit-diff" class="step slide" data-x="-6000" data-y="5000">
+        Step 4 : Lets review changes our changes
+        <q class="tuts">
+           <span class="note">Open newfile.txt and modify content and save.</span> <br>
+           <code>$ git status</code><br>
+            <span class="note">
+             modified:   newfile.txt
+            </span><br><br>
+             <code>$ git diff</code><br>
+            <span class="note">
+             show the difference between previous and new content
+             now, repeat <code>git add .</code> and <code>git commit -m "modified"</code>
+            </span>
+        </q>
+    </div>
+
+    <div id="remote" class="step slide" data-x="-5000" data-y="5000">
+        Step 4 : Working with remote repository.
+        <q class="tuts">
+           <span class="note">
+                Login or Create an Github Account <a target="_blank" href="https://github.com">https://github.com/</a> <br><br>
+
+                Create new Repository <a target="_blank" href="https://github.com/new">https://github.com/new</a><br><br>
+                Repository name : gittest (can be anything)<br><br>
+
+                Note : Don't check "Initialize this repository with a README"
+           </span>
+
+           
+        </q>
+        </q>
+    </div>
+
+    <div id="push" class="step slide" data-x="-4000" data-y="5000">
+        Step 5 : Working with remote repository.
+        <q class="tuts">
+            <code>$ git remote add origin https://github.com/anishjoshi/gittest.git</code><br>
+            <span class="note">Add remote repository location. Only once normally.</span><br><br>
+            <code>$ git push origin master (intital default branch name)</code><br>
+            <span class="note">Push latest changes to remote repository.</span><br>
+       
+        </q>
+    </div>
+
+    <div id="push-fetch" class="step slide" data-x="-3000" data-y="5000">
+        Step 5 : Working with remote repository.
+        <q class="tuts">
+            <code>$ git pull origin master </code><br>
+             <span class="note">Pull latest changes to remote location of master branch. Sync between muliple developer</span><br><br>
+
+             <code>$ git fetch</code><br>
+             <span class="note">Download new branch and data informations from remote repository</span><br>
+        </q>
+    </div>
 <!--
     
     Hint is not related to impress.js in any way.
