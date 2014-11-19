@@ -153,12 +153,61 @@
 
             <li>Free for Public and Pay for Private</li>
             <li>You can clone any public repository, follow projects and developers, post comment etc.</li>
-<li>It's becoming the facebook's for developers.</li>
+<li>It's becoming facebook for developers.</li>
         </ul>
     </div>
 
     <div id="imagination" class="step" data-x="-6700" data-y="-300" data-scale="6">
         <p>Enough Talking! <br><b class="imagination">Lets Begin ></b></p>
+    </div>
+
+    <div id="get-git" class="step slide" data-x="-10000" data-y="5000">
+        Getting Git
+        <q style="text-align:center;">
+            You can download it from this URL
+            <br><br>
+            <a href="http://git-scm.com/download">http://git-scm.com/download</a>
+        </q>
+    </div>
+
+    <div id="git-start" class="step slide" data-x="-9000" data-y="5000">
+        Step 1 : Create or Get a Repository
+        <q class="tuts">
+           <strong>Creating a new repository</strong><br>
+           <code>$ git init</code><br>
+           <span class="note">To create a git repository from exting directory of file</span>
+           <hr>
+           <strong>Or, clone remote repository</strong><br>
+           <code>$ git clone https://github.com/git/git.git</code><br>
+           <span class="note">Get a copy of remote repository</span>
+        </q>
+    </div>
+
+    <div id="git-changes" class="step slide" data-x="-8000" data-y="5000">
+        Step 2 : Making some changes and add to stage
+        <q class="tuts">
+           <strong>Create a new file - newfile.txt</strong><br>
+           <code>$ git status</code><br>
+           <span class="note">file status "Untracked files present"</span><br>
+           <code>$ git add newfile.txt</code><br>
+           <code>$ git status</code><br>
+           <span class="note">file status "Changes to be committed"</span>
+        </q>
+    </div>
+
+   <div id="commit-changes" class="step slide" data-x="-7000" data-y="5000">
+        Step 3 : Lets commit our changes
+        <q class="tuts">
+           <code>$ git commit -m "Added newfile.txt"</code><br>
+           <span class="note">
+            $ "Added newfile.txt<br>
+            1 file changed, 1 insertion(+)<br>
+            create mode 100644 newfile.txt"<br><br>
+
+            Records a snapshot of added file (Staging area).
+
+            </span>
+        </q>
     </div>
 
 <!--
