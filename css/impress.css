@@ -727,3 +727,16 @@ a:focus {
 ul li {
     list-style-type: disc;
 }
+
+code {
+    font-weight: bold;
+    font-size: 36px;
+}
+.note {
+    font-size: 30px;
+}
+
+.tuts {
+    line-height: 60px !important;
+    margin-top: 54px !important;
+}
